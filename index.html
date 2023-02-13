@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universitas Gadjah Mada</title>
+    <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
@@ -15,11 +19,11 @@
     <nav>
         <img class="logo" src="images/logo2.png" alt="logo">
         <ul>
-            <li><a href="page-404/404.html">Home</a></li>
-            <li><a href="page-404/404.html">About</a></li>
-            <li><a href="page-404/404.html">Program</a></li>
-            <li><a href="page-404/404.html">Gallery</a></li>
-            <li><a href="page-404/404.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#popup"><i class="fa-solid fa-user"></i></a></li>
         </ul>
 
@@ -36,9 +40,32 @@
     <div id="popup">
         <div class="window">
             <a href="#" class="close-button" title="Close">X</a>
-            <!-- <h2>Selamat Datang Universitas Gajahmada</h2> -->
-            <button>Register</button>
-            <button>Login</button>
+            <h2>Login</h2>
+            <div class="form-login">
+                <div class="email">
+                    <label for="email">Email<span>*</span></label>
+                    <input type="text" placeholder="Input Email">
+                </div>
+                <div class="password">
+                    <label for="label"> Password<span>*</span></label>
+                    <input type="password" placeholder="Input Password">
+                </div>
+                <div class="lupa-password">
+                    <div><input type="checkbox">
+                        <label for="">Tetap login</label>
+                    </div>
+                    <div>
+                        <a href="">Lupa Password</a>
+                    </div>
+                </div>
+                <div class="login">
+                    <button class="button btn-login">LOGIN</button>
+                </div>
+                <div class="signup">
+                    <label for="">Dont have accout?</label>
+                    <a href="sign-up.html"> Sign up now</a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end popup -->
@@ -57,12 +84,132 @@
         <!-- end hero -->
 
         <!-- about -->
-        <div class="section about">
+        <section class="section-about" id="about">
             <div class="about">
+                <div class="about-content">
+                    <h2>About</h2>
+                    <p>Universitas Gadjah Mada menyelenggarakan berbagai program pendidikan meliputi program sarjana,
+                        pascasarjana, profesi, spesialis, dan diploma.
+                        Beberapa fakultas juga menyelenggarakan program internasional baik pada program sarjana maupun
+                        pascasarjana.</p>
+                </div>
+                <div class="about-image">
+                    <figure>
+                        <img src="images/fakultasugm.jpeg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+
+        <!-- program -->
+        <section class="section-program" id="program">
+            <div class="program">
+                <div class="card-program">
+                    <a href="">
+                        <h3>Program Sarjana</h3>
+                        <p>Program sarjana bisa diikuti oleh lulusan SMA/SMK/MA/MAK, mempunyai beban studi 144-160 sks
+                            dan dapat ditempuh dalam waktu 8-14 semester.</p>
+                    </a>
+                </div>
+
+                <div class="card-program">
+                    <a href="">
+                        <h3>Program Sarjana Terapan</h3>
+                        <p> Program Sarjana Terapan menawarkan berbagai program studi yang berfokus dalam membekali
+                            mahasiswa dengan keterampilan yang relevan dengan tuntutan dunia kerja</p>
+                    </a>
+                </div>
+
+                <div class="card-program">
+                    <a href="">
+                        <h3>Program Pascasarjana</h3>
+                        <p>UGM menawarkan program studi lanjutan di tingkat S2 dan S3 yang diselenggarakan di fakultas
+                            serta sekolah Pascasarjana.</p>
+                    </a>
+                </div>
+
+                <div class="card-program">
+                    <a href="">
+                        <h3>Program Profesi</h3>
+                        <p>Program profesi diperuntukkan sebagai bagi lulusan program studi tertentu sebagai syarat
+                            untuk mendapatkan gelar keprofesian.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end program -->
+
+        <!-- gallery -->
+        <section class="section-gallery" id="gallery">
+            <div class="gallery">
+                <h2>Gallery</h2>
+            </div>
+
+            <div class="list-gallery">
+                <div class="gallery-1">
+                    <img src="images/gallery1.png" alt="">
+                </div>
+
+                <div class="gallery-2">
+                    <img src="images/balairung.jpg" alt="">
+                </div>
+
+                <div class="gallery-3">
+                    <img src="images/gallery3.png" alt="">
+                </div>
+
+                <div class="gallery-4">
+                    <img src="images/gallery4.png" alt="">
+                </div>
+
+                <div class="gallery-5">
+                    <img src="images/gallery5.png" alt="">
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end gallery -->
+
+        <!-- Contact us -->
+        <section class="section-contact" id="contact">
+            <div class="contact">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="contact">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="form">
+                            <label for="">Name</label><br>
+                            <input type="text" placeholder="Input Name">
+                        </div>
+
+                        <div class="form">
+                            <label for="">Email</label><br>
+                            <input type="text" placeholder="Input Emial">
+                        </div>
+
+                        <div class="form">
+                            <label for="">Mobile</label><br>
+                            <input type="text" placeholder="Input Mobile Phone">
+                        </div>
+                        <div class="form">
+                            <label for="">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Input Message"></textarea>
+                        </div>
+                        <div>
+                            <button class="button btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
 
             </div>
-        </div>
-        <!-- end about -->
+        </section>
+        <!-- end contact us -->
+
+
 
         <script src="index.js"></script>
 </body>
